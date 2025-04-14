@@ -32,6 +32,8 @@ public class Assignment4Test
     }
     string baseURL = "http://localhost/prog8170a04/getQuote.html";
     [Test]
+
+    //1.
     public void insuranceQuote1()
     {
         driver.Navigate().GoToUrl("http://localhost/prog8170a04/getQuote.html");
@@ -63,6 +65,7 @@ public class Assignment4Test
         }
         driver.Close();
     }
+    //2.
     [Test]
     public void insuranceQuote3()
     {
@@ -94,6 +97,7 @@ public class Assignment4Test
             Assert.That(value, Is.EqualTo("$3905"));
         }
     }
+    //3.
     [Test]
     public void insuranceQuote4()
     {
@@ -127,6 +131,7 @@ public class Assignment4Test
         Assert.That(driver.FindElement(By.Id("phone-error")).Text, Is.EqualTo("Phone Number must follow the patterns 111-111-1111 or (111)111-1111"));
         driver.Close();
     }
+    //4.
     [Test]
     public void insuranceQuote5()
     {
@@ -174,6 +179,7 @@ public class Assignment4Test
         }
         Assert.That(driver.FindElement(By.Id("email-error")).Text, Is.EqualTo("Must be a valid email address"));
     }
+    //5.
     [Test]
     public void insuranceQuote6()
     {
@@ -206,6 +212,7 @@ public class Assignment4Test
         driver.FindElement(By.Id("postalCode-error")).Click();
         Assert.That(driver.FindElement(By.Id("postalCode-error")).Text, Is.EqualTo("Postal Code must follow the pattern A1A 1A1"));
     }
+    //6.
     [Test]
     public void insuranceQuote7()
     {
@@ -243,6 +250,7 @@ public class Assignment4Test
         }
         Assert.That(driver.FindElement(By.Id("age-error")).Text, Is.EqualTo("Age (>=16) is required"));
     }
+    //7.
     [Test]
     public void insuranceQuote8()
     {
@@ -269,6 +277,7 @@ public class Assignment4Test
         driver.FindElement(By.Id("btnSubmit")).Click();
         Assert.That(driver.FindElement(By.Id("accidents-error")).Text, Is.EqualTo("Number of accidents is required"));
     }
+    //8.
     [Test]
     public void insuranceQuote9()
     {
@@ -308,6 +317,8 @@ public class Assignment4Test
         driver.FindElement(By.CssSelector(".card-body")).Click();
         Assert.That(driver.FindElement(By.Id("experience-error")).Text, Is.EqualTo("Years of experience is required"));
     }
+
+    //9.
     [Test]
     public void insuranceQuote11()
     {
@@ -345,6 +356,7 @@ public class Assignment4Test
         driver.FindElement(By.CssSelector(".card:nth-child(1) > div > .form-group:nth-child(1)")).Click();
         Assert.That(driver.FindElement(By.Id("firstName-error")).Text, Is.EqualTo("First Name is required"));
     }
+    //10.
     [Test]
     public void insuranceQuote12()
     {
@@ -383,6 +395,8 @@ public class Assignment4Test
         driver.FindElement(By.CssSelector(".card:nth-child(1)")).Click();
         Assert.That(driver.FindElement(By.Id("phone-error")).Text, Is.EqualTo("Phone Number is required"));
     }
+    //11.
+
     [Test]
     public void insuranceQuote13()
     {
@@ -422,6 +436,7 @@ public class Assignment4Test
         driver.FindElement(By.CssSelector(".col-md-2")).Click();
         Assert.That(driver.FindElement(By.Id("postalCode-error")).Text, Is.EqualTo("Postal Code is required"));
     }
+    //12.
     [Test]
     public void insuranceQuote14()
     {
@@ -453,6 +468,7 @@ public class Assignment4Test
             Assert.That(value, Is.EqualTo("No Insurance for you!!  Too many accidents - go take a course!"));
         }
     }
+    //13.
     [Test]
     public void insuranceQuote15()
     {
@@ -484,6 +500,7 @@ public class Assignment4Test
             Assert.That(value, Is.EqualTo("$3905"));
         }
     }
+    //14.
     [Test]
     public void insuranceQuote2()
     {
@@ -516,6 +533,7 @@ public class Assignment4Test
             Assert.That(value, Is.EqualTo("No Insurance for you!!  Too many accidents - go take a course!"));
         }
     }
+    //15.
     [Test]
     public void insuranceQuote10()
     {
