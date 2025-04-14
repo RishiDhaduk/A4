@@ -15,6 +15,7 @@ using NUnit.Framework;
 public class Assignment4Test
 {
     private IWebDriver driver;
+
     public IDictionary<string, object> vars { get; private set; }
     private IJavaScriptExecutor js;
     [SetUp]
